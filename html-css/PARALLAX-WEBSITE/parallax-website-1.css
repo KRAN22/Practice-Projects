@@ -1,0 +1,103 @@
+body{
+	background-color:#fff; 
+	color:#555 ; 
+	font-family: "Lato", sans-serif;  
+	font-size: 16px;  
+	 background-image: url("image1.jpg");
+	 /*position: fixed;*/
+	 background-attachment: fixed;
+	line-height: 1.6em;  
+} 
+
+.parallax{
+	color: white;
+	background-color: #666; 
+	max-width: 500px; 
+	margin: auto;   
+} 
+.parallax h1{
+	padding: 10px 0; 
+	text-align: center; 
+	letter-spacing:.2em;
+	line-height: 50px;  
+	margin: 300px 0;
+}
+
+
+
+.Section-one{ 
+ 	margin: auto; 
+	padding: 50px 80px; 
+	background-color: white; 
+
+} 
+.Section-one h2{
+	text-align: center; 
+	font-size: 30px;
+} 
+
+ 
+
+.imagetwotext{ 
+	max-width: 500px; 
+	margin: auto;   
+}  
+.imagetwotext h1{
+	text-align: center; 
+	letter-spacing:5px; 
+	margin: 300px 0; 
+	color:black;
+} 
+
+
+.Section-two{ 
+	margin: auto; 
+	padding: 50px 80px; 
+	background-color: black;
+	color:white ;
+} 
+.Section-two h2{
+	text-align: center; 
+	font-size: 30px;
+} 
+
+
+
+.imagetwotext{
+	color: black; 
+	max-width: 500px; 
+	margin: auto;   
+}  
+.imagethreetext h1{
+	text-align: center; 
+	letter-spacing:5px; 
+	margin: 300px 0; 
+	color: black;
+}  
+
+
+.Section-three{
+	margin: auto; 
+	padding: 50px 80px; 
+	background-color: black;
+	color:white ;
+} 
+.Section-three h2{
+	text-align: center; 
+	font-size: 30px;
+}  
+
+
+.traversy{
+	color: white;
+	background-color: #666; 
+	max-width: 500px; 
+	margin: auto;   
+} 
+.traversy h1{
+	padding: 10px 0; 
+	text-align: center; 
+	letter-spacing:.2em;
+	line-height: 50px;  
+	margin: 300px 0;
+}
