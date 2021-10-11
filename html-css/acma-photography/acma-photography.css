@@ -1,0 +1,88 @@
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+    margin:auto;
+    background-color:#eee;
+
+}  
+.container{
+	margin: 0 0 100px 200px;
+	
+} 
+
+
+.acma h1{
+	padding-top: 200px; 
+	padding-left: 120px; 
+	font-weight: 400;
+    font-size: 2.5rem;
+} 
+.acma h2{ 
+	margin-top: -10px;
+	padding-left: 30px; 
+	font-weight: 400;
+    font-size: 2.5rem;
+} 
+.acma p{ 
+	margin-top: -20px;
+	padding-left:40px; 
+	font-size: 20px; 
+	color:grey;
+}
+
+
+.acma button{  
+	margin-left: 70px;
+	padding: 20px 60px; 
+	border-radius: 30px; 
+	border-color: white; 
+	border-bottom-color:white;
+	
+}
+
+.image{   
+	background-color: white;
+	margin-top: -480px;
+	margin-bottom: -103.8px; 
+	padding-left: 383px;
+	float: top; 
+
+}
+
+.image img{
+	width: 520px;
+	height:802px;
+} 
+
+.photo { 
+	text-align: center; 
+	padding-right: 160px;  
+} 
+.photo h1{ 
+	background-color: grey; 
+	padding: 20px 0px; 
+	margin-bottom: 0px;
+} 
+.photo h3{
+	background-color: white; 
+	padding: 20px 0px; 
+	margin: 0px; 
+} 
+.photo p{ 
+	padding-bottom: 30px;
+	background-color: white;
+	margin: 0px; 
+
+}
+.photo img{  
+	margin-bottom: -4px;
+	width: 900px;
+	height: 506px;
+} 
+
+.touch{
+	text-align: center; 
+	padding-bottom:40px ;
+} 
+.touch h1{
+	font-size: 40px;
+}

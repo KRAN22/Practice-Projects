@@ -1,0 +1,189 @@
+body{
+	background-color:#fff; 
+	color:#555 ; 
+	font-family:  'PT Sans', sans-serif;
+	font-size: 16px;  
+	line-height: 1.6em;   
+	margin: auto;
+}  
+
+.mytune{
+	background-image: url(image.2.jpg); 
+	text-align: center; 
+	color: white; 
+	padding-top: 150px; 
+	padding-bottom: 240px;
+} 
+.mytune h1{ 
+	font-size: 60px; 
+	letter-spacing:-.3px; 
+	padding-bottom: 25px;
+} 
+.mytune h3{
+	font-size: 30px;
+} 
+.mytune p{
+	font-size: 20px;
+	padding: 0 40px;
+} 
+
+
+
+.music{
+	background-color:#252529; 
+	color: white; 
+	text-align: center;
+	padding-top: 40px;
+} 
+.music h1{
+	font-size: 40px; 
+	padding-bottom: 20px;
+} 
+.music h2{
+	font-size: 30px; 
+	padding-bottom: 20px;
+}
+.music p{
+	font-size: 20px;
+	padding: 0 50px; 
+	line-height: 1.6em;
+} 
+.music button{ 
+	font-size: 16px;
+	padding: 18px;
+	background-color: #b90415; 
+	color: white; 
+	border-color: #b90415;
+}  
+.music h3{
+	font-size: 15px; 
+	padding-top: 20px;
+} 
+.music img{
+	width:1177px;
+	height:701px 
+}
+
+
+.movie{
+	text-align: center; 
+	padding-top: 50px; 
+	color:  #333; 
+	
+} 
+.movie h1{
+	font-size: 28px; 
+	padding-bottom: 30px;
+} 
+.movie p{
+	padding: 0 50px; 
+	font-size: 20px; 
+	word-spacing: .1em; 
+	padding-bottom: 20px;
+} 
+.movie button{
+	padding: 19px;
+	color: white;
+	background-color:#103063; 
+	border-color: #103063;
+} 
+.movie img{
+	padding-bottom:35px;
+}
+
+
+
+.world{
+	background-image: url(image.5.jpg); 
+	text-align: center; 
+	padding-top: 170px;
+	padding-bottom: 170px;
+	color: white;
+} 
+.world h1{
+	padding-bottom:33px;  
+	font-size: 30px;
+}
+.world p{ 
+	font-size: 20px;
+	padding: 0 50px; 
+	line-height: 1.5em;
+} 
+
+
+
+.image{
+	float: left;  
+	width: 50%; 
+	padding-top: 30px; 
+	padding-left: 40px; 
+
+} 
+.image img{
+	width: 540px;
+	height: 350px;
+} 
+
+
+.gift{  
+	padding-top: 40px; 
+	padding-bottom: 100px; 
+	color:#333; 
+	padding-right: 60px; 
+	padding-left: 40px;
+} 
+.gift h1{
+	color: black;
+	font-size: 25px; 
+	margin-left: 20px;
+} 
+.gift p{
+	padding-right: 60px;
+} 
+.gift hr{
+	padding:0 60px ;
+}  
+.gift ul{
+	margin-left: 20px;
+}
+.gift li{
+	list-style: disclosure-closed;  
+} 
+
+
+
+.main{
+	background-color: #252529; 
+	color: white; 
+    margin:  auto;
+    padding: 0 30px; 
+    display:block;  
+    padding-bottom: 20px;
+
+}
+ 
+.main-1{  
+	display:grid; 
+	grid-template-columns: repeat(4, 1fr); 
+
+} 
+.main-1 li{
+	list-style: none; 
+	display: list-item; 
+	text-align: -webkit-match-parent; 
+	font-size: 12px;
+} 
+.main-1 li h3{
+	font-size: 16px;
+	padding-bottom:-10px;
+} 
+
+
+
+
+.footer{
+	padding: 15px 0;
+	background-color: #333; 
+	color: white;
+	text-align: center;
+}
