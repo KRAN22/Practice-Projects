@@ -1,0 +1,180 @@
+body{
+	background-image: url(topography.jpg), linear-gradient(
+	110deg, #f93d66, #6d47d9);
+    background-size: 340px, auto;
+    min-height: calc(100vh - 100px);
+    margin: 50px;
+    /* background: white; */
+    background-attachment: fixed;
+    letter-spacing: -1px;
+}
+
+
+.container{
+	
+} 
+.menu ul{ 
+	display:grid;  
+	grid-template-columns: repeat(5, 1fr);  
+	grid-gap: 1.5em;
+	list-style: none;
+
+} 
+
+.menu li{
+	font-size: 23px;
+	text-align: center;
+	background-color: #ffc600;; 
+	padding: 15px;
+} 
+.image{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+	grid-gap: 1em;
+	grid-row:1/2 ;
+}
+/*.image div{
+	background-color: yellow; 
+
+
+}*/
+.image img{
+	padding-top: 20px;
+	padding-left: 40px;
+	width: 800px; 
+	height: 420px;
+}  
+.image {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.bottom-left {
+  position: absolute; 
+  background-color:#ffc600 ; 
+  padding: 10px;
+  bottom: 180px;
+  left: 80px;
+}
+
+.top-left {
+  position: absolute; 
+  background-color:#ffc600 ; 
+  padding: 10px;
+  font: bold;
+  font-size: 32px; 
+  top: 150px;
+  left: 80px;
+}
+
+.rates{
+	padding-top: 20px;
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-row-gap: 1em;
+} 
+
+.rates div{ 
+	padding-top: 30px;
+	text-align: center;	
+	background-color: #ffc600;
+} 
+
+.rates h1{
+	font-size: 50px; 
+	margin-bottom: -15px;
+} 
+.rates h3{
+	font-size: 18px;
+
+} 
+
+
+.drinks{ 
+	padding-top: 20px;
+	padding-left: 40px;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); 
+	grid-gap: 1em;
+} 
+.drinks div{
+	background-color: white;
+} 
+
+.drinks h2{
+	margin-top: 5px;
+	font-size: 50px;
+} 
+.drinks h3{
+	font-size: 20px;
+	margin-top: -30px;
+}
+.drinks p{
+	font-size: 17px; 
+	color: grey;
+} 
+
+
+
+.taco{
+	margin-top: 20px;
+	margin-left: 40px;  
+	padding-left: 50px;
+	padding:40px 0px 30px 50px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr 2fr); 
+	background-color: white; 
+} 
+
+
+.taco h1{
+	padding-top:50px ;
+	font-size: 25px; 
+	margin-bottom: -10px;
+} 
+
+.taco h5{
+	font-size: 15px;
+} 
+
+.taco button{
+	background-color: #ffc600 ;
+	padding: 10px; 
+	color: black; 
+	border-color: #ffc600;
+} 
+
+.gram{
+	padding-top: 10px;
+	font-size: 19px;
+	text-align: center; 
+	padding-left: 40px;
+} 
+.gram h2 {
+  display: flex;
+  flex-direction: row;
+}
+.gram h2:before, h2:after{ 
+  content: "";
+  flex: 1 1;
+  border-bottom: 10px solid #ffc600;
+  margin: auto;
+}
+.gram h2:before {
+  margin-right: 15px
+}
+.gram h2:after {
+  margin-left: 15px
+}
+
+
+
+
+.photos{ 
+	padding-top: 20px;
+	padding-left: 40px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1em;
+}

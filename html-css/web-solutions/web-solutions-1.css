@@ -36,7 +36,13 @@ body{
 	color: white;
 }
 
-.web-1{ 
+.web-1{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap:1em ;
+}
+
+/*.web-1{ 
 	padding-top: 20px;
 	text-align: center; 
 	color:black; 
@@ -57,37 +63,28 @@ body{
 	text-align: center;
 	padding-bottom:30px; 
 	background-color: white;
-}  
-.main{
-	padding-left: 200px; 
-	/*padding-right: 50px; */
-	padding-top: 30px; 
-/*	margin-right: 50px;  */ 
+}  */
+.main{ 
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-gap: 2em;
 
-} 
-.main-1{ 
-	float: left;
-	width: 337px;   
-	margin-right: -50px;
-	color: black; 
-	background-color: white;  
-	margin-top: 30px;  
-} 
+
+}
 
 .main-1 img{ 
-	
 	width: 260px;
 	height: 220px;
 
 } 
-.main h1{ 
+/*.main h1{ 
 	padding-left:35px;
 	font-size: 20px; 
 	background-color: white;
 } 
 .main p{
 	text-align: center; 
-	padding-right: 70px; 
+	padding-right: 70px; */
 
 }  
 .digital{
