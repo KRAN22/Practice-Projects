@@ -1,0 +1,13 @@
+body {
+    background: #293f50;
+    color: #888;
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container{
+    width: 80%;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 3fr 1fr
+}
