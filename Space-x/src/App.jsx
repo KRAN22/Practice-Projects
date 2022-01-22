@@ -1,13 +1,16 @@
 import React from "react";
 import { Header } from "./Component/Header/Header";
 import "./styles.css";
-import Launches from "./Component/launches/Launches";
+import { BrowserRouter as Router } from "react-router-dom";
+import CustomRouter from "./CustomRouter";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Launches />
+      <Router>
+        <CustomRouter />
+      </Router>
     </div>
   );
 }

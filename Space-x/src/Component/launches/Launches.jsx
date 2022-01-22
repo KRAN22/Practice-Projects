@@ -1,40 +1,49 @@
 import React from "react";
 import Launch from "../Launch/Launch";
 import "./styles.css";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 class Launches extends React.Component {
+  state = {
+    launches: [],
+  };
+  componentDidMount = () => {
+    this.getLaunches();
+  };
+  getLaunches = () => {
+    axios
+      .get("https://api.spacexdata.com/v3/launches")
+      .then((response) => {
+        this.setState({ launches: response.data });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  LaunchList = () => {
+    const launchListComponents = this.state.launches.map((launch, index) => {
+      const images =
+        launch.links.flickr_images.length === 0
+          ? "https://images.unsplash.com/photo-1628126235206-5260b9ea6441?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+          : launch.links.flickr_images;
+      return (
+        <Link key={"lunch_" + index} to={"/launch/" + launch.flight_number}>
+          <Launch
+            banner={images}
+            title={launch.mission_name}
+            launchDate={launch.launch_date_local}
+            description={launch.details}
+          />
+        </Link>
+      );
+    });
+    return launchListComponents;
+  };
+
   render() {
-    return (
-      <div className="launches">
-        <Launch
-          banner="https://farm5.staticflickr.com/4174/33859521334_d75fa367d5_o.jpg"
-          title="FalconSat"
-          launchDate="2006-03-25T10:30:00+12:00"
-          description="At 6,070 kg this was the heaviest payload launched to GTO by a
-                Falcon 9 rocket. The launch was originally scheduled for the Falcon
-                Heavy, but performance improvements allowed the mission to be
-                carried out by an expendable Falcon 9 instead."
-        />
-        <Launch
-          banner="https://farm5.staticflickr.com/4174/33859521334_d75fa367d5_o.jpg"
-          title="FalconSat"
-          launchDate="2006-03-25T10:30:00+12:00"
-          description="At 6,070 kg this was the heaviest payload launched to GTO by a
-                Falcon 9 rocket. The launch was originally scheduled for the Falcon
-                Heavy, but performance improvements allowed the mission to be
-                carried out by an expendable Falcon 9 instead."
-        />
-        <Launch
-          banner="https://farm5.staticflickr.com/4174/33859521334_d75fa367d5_o.jpg"
-          title="FalconSat"
-          launchDate="2006-03-25T10:30:00+12:00"
-          description="At 6,070 kg this was the heaviest payload launched to GTO by a
-              Falcon 9 rocket. The launch was originally scheduled for the Falcon
-              Heavy, but performance improvements allowed the mission to be
-              carried out by an expendable Falcon 9 instead."
-        />
-      </div>
-    );
+    return <div className="launches">{this.LaunchList()}</div>;
   }
 }
 
