@@ -20,3 +20,8 @@
   /* width: 800px; */
   color: lightslategrey;
 }
+
+.launchView img {
+  width: auto;
+  height: 600px;
+}
